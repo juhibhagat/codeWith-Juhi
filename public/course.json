@@ -1,0 +1,34 @@
+[
+    {
+        "id" :1,
+        "course_Name":"python",
+        "Duration": "4-month",
+        "Image" : "./image/slider-2.jpg",
+        "Fee":10000
+        
+    },
+     {
+        "id" :1,
+        "course_Name":"Ui Fullstack with react",
+        "Duration": "4-month",
+        "Image" : "./image/slider-2.jpg",
+        "Fee":10000
+        
+    },
+     {
+        "id" :1,
+        "course_Name":"java",
+        "Duration": "4-month",
+        "Image" : "./image/slider-2.jpg",
+        "Fee":10000
+        
+    },
+     {
+        "id" :1,
+        "course_Name":">net",
+        "Duration": "4-month",
+        "Image" : "./image/slider-2.jpg",
+        "Fee":10000
+        
+    }
+]
