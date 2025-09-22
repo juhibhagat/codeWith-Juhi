@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var http = new XMLHttpRequest();
+        http.open("get","../public/course.json",true);
+        http.send();
+        http.onreadystatechange=function(data){
+            if(http.readyState === 4){
+                console.log(JSON.parse(http.responseText));
+                var datas = JSON.parse(http.responseText);
+               datas.map(function(data){
+                var div = document.createElement("div");
+                div.className="card m-2 p-2";
+                 div.style.width = "200px";
+                div.innerHTML= `
+                <div class="card-header">
+                    <p> ${data.id} </p>
+                    <p class="fw-bold"> COURSE_NAME :${data.course_Name}</p>
+                </div>
+                 <div class="card-footer">
+                    <h1> <img src="../public/image/slider-2.jpg" width="200px" height="300px"></h1>
+                </div> 
+                `
+                  document.querySelector("section").appendChild(div)
+               })
+             
+            }
+        }
+    </script>
+</head>
+<body>
+    <section>
+        
+    </section>
+</body>
+</html>
